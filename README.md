@@ -1,26 +1,33 @@
+# 🔍 Java DSA Concepts
 
-# 👩‍💻 Java DSA Basics
+This repository contains my Java implementations of core DSA topics like Arrays, Strings, and Binary Search.
 
-This is my first GitHub repository to begin my journey into **Java** and **Data Structures & Algorithms**.
+### 📚 Topics Covered
 
-### 📌 What's Inside?
+- ✅ Arrays
+- ✅ Strings
+- ✅ Binary Search
 
-- Simple Java programs for practice
-- Step-by-step learning journey
+### 🚀 About Me
 
-### 🚀 Goal:
-To learn and grow by building strong fundamentals in Java and DSA, and gradually contribute to open source projects through programs like **GSSoC**.
-
----
-
-### ✅ Current Topics:
-
-- Basic Syntax
-- Conditionals & Loops
-- Arrays (coming soon)
+I'm a BTech CSE student, learning Java & DSA to build strong foundations and contribute to open source through programs like **GSSoC**.
 
 ---
 
-### 📬 About Me:
+### 📁 Sample Code
 
-> BTech CSE student | Learning Java & DSA | Beginner in Open Source
+#### Binary Search
+
+```java
+public class BinarySearch {
+    public static int search(int[] arr, int target) {
+        int low = 0, high = arr.length - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (arr[mid] == target) return mid;
+            else if (arr[mid] < target) low = mid + 1;
+            else high = mid - 1;
+        }
+        return -1;
+    }
+}
